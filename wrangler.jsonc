@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "shajara",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  // Baza birinchi deployda avtomatik yaratiladi (wrangler >= 4.45).
+  "d1_databases": [{ "binding": "DB", "database_name": "shajara-db","database_id": "678f70c5-b5ad-4664-a40f-f320a01dbe4d" }],
+  "observability": { "enabled": true }
+}
